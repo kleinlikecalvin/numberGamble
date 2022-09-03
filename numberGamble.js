@@ -3,7 +3,7 @@ const enterNum = () => {
     const userNum = Number(window.prompt("Enter a number between 1 - 5"));
     const randomNum = Math.floor(Math.random() * 5 + 1);
     if (isNaN(userNum) || userNum > 5 || userNum < 1) {
-      reject(new Error("Please enter a number between 1 and 13"));
+      reject(new Error("Please enter a number between 1 and 5"));
     }
     if (userNum === randomNum) {
       resolve({
